@@ -1,0 +1,17 @@
+<head>
+  <title>Productos</title>
+</head>
+<body>
+  <h1>Lista de Productos</h1>
+
+
+  {% for Product in products %}
+
+    <h3>{{Product.producto_nombre}} = ${{Product.producto_precio}}</h>
+
+  {% endfor %}
+
+  </br>
+  </br>
+  <a href = "javascript:history.go(-1)">Volver<a>
+</body>
